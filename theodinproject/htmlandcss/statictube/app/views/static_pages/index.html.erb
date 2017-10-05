@@ -1,0 +1,61 @@
+
+<%= render 'static_pages/header' %>
+
+
+<body>
+
+<div class="row">
+  <div class="col-lg-5 col-lg-offset-1">
+
+    <section id="video-card">
+      <iframe  src="https://www.youtube.com/embed/yOqFGHBZJz8" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="info-card">
+      <span id="text-info">
+        <h3><b>Video name:</b> User Authentication In Ruby On Rails</h3>
+        <h5><b>Video description:</b> In this video i'll show you how to gems in ruby on rails also with adding Sign Up + Login + Logout + Forget Password features using the popular user authentication gem called devise.</h5>
+        <p><b>Publish by</b><small> Code War</small></p>
+      </span>
+
+      <section id="icon-info">
+        <i class="material-icons">thumb_up</i>
+        <i class="material-icons">thumb_down</i>
+        <i class="material-icons">share</i>
+        <i class="material-icons">more_horiz</i>
+      </section>
+    </section>
+
+
+    <% 23.times do |i| %>
+      <section class="comments">
+          <section id="comment-text">
+            <p><b>name:</b> Meir Rosilio <%="#{i+1}"%></p>
+            <p><b>Comment:</b> In this video i'll show you how to gems in ruby on rails also with adding Sign Up + Login + Logout + Forget Password features using the popular user authentication gem called devise.</p>
+            <h6><b>date:</b><small> 06/10/2017</small></h6>
+          </section>
+        </section>
+    <%end%>
+  </div >
+
+  <aside class="col-lg-3 col-lg-push-2">
+    <section id="aside-card">
+      <% 10.times do |i| %>
+          <section id="aside-video-card">
+            <iframe  src="https://www.youtube.com/embed/yOqFGHBZJz8" frameborder="0" allowfullscreen></iframe>
+          </section>
+          <section id="aside-text-info">
+            <p><b>Video name:</b> User Authentication In Ruby On Rails</p>
+            <p><b>Video description:</b> In this video i'll show you how to gems in ruby on rails also with adding Sign Up + Login + Logout + Forget Password features using the popular user authentication gem called devise.</p>
+            <h6><b>Publish by</b><small> Code War</small></h6>
+          </section>
+          <hr>
+      <%end%>
+    </section>
+  </aside>
+</div>
+
+<%= render "static_pages/footer" %>
+</body>
+
+
